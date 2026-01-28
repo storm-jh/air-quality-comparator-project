@@ -10,6 +10,8 @@ df[['nox', 'no2', 'no']] = df[['nox', 'no2', 'no']].interpolate(method='time', l
 
 print(df[['nox', 'no2', 'no']].isna().sum())
 
+#df.to_csv('air_brum_bris_cleaned', index=False)
+
 #Big graphs, needs some filters
 
 for site in df['site'].unique():
