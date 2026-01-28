@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 
 df = pd.read_csv(r'air_brum_bris.csv')
 
@@ -31,4 +32,3 @@ for site in df['site'].unique():
 
 df[df['site'] == df['site'].iloc[0]]['nox'].plot()
 plt.show()
-
